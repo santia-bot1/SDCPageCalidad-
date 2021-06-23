@@ -35,7 +35,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .header .header_top p{
     margin: 0;
@@ -71,11 +71,12 @@ body{
 }
 main{
     padding-bottom: 25px;
-    width: 100%;
+    width: 98%;
     border-bottom: solid 1px black;
 }
 .section{
     width: 98%;
+    background-color: #F3ECEB;
 }
 .section .article_principal{
     display: flex;
@@ -103,7 +104,7 @@ main{
 }
 .section  .article_tipos{
     display: flex;
-    margin-left: 8px;
+    justify-content: center;
     width: 100%;
     height: 22rem;
     background-color: #17cac3;
@@ -163,9 +164,10 @@ main{
 }
 .footer{
     border-top: solid 1px black;
+    background-color: #F3ECEB;
     margin-top: 50px;
     padding: 25px;
-    width: 96%;
+    width: 93%;
 }
 .footer .footer_caja{
     background-color: #17cac3;
@@ -231,3 +233,168 @@ main{
     position: relative;
     right: 35px ;
 }
+/*Media query */
+@media screen and (min-width:320px) and (max-width: 425px) {
+    body{
+        
+        width: 95vh;
+    }    
+    .header .header_top {
+        display: flex;
+        justify-content: end;
+        
+    }
+    .header .header_bottom .nav_page .ul_nav {
+        justify-content: center;
+    }
+    .header .header_bottom .nav_page .div_nav {    
+        margin-right: 30px;
+    }
+    .section .article_principal img {
+            display: none;
+        }
+    .section .article_principal {
+            flex-direction: column;
+            margin: 10px 0px;
+    }
+    .section .article_principal .contenido .h1_principal {
+            font-size: 35px;
+    }
+    .section .article_tipos {
+        flex-direction: column;
+        align-items: center;
+        width: inherit;
+        height: 100%;
+        margin-left: 4px;
+    }
+    .section .article_tipos .iso {
+        width: 100%;
+        height: 33%;
+    }
+    .section .article_tipos .ieee {
+        width: 100%;
+        height: 33%;
+    }
+    .section .article_tipos .istqb {
+        width: 100%;
+        height: 33%;
+    }
+    .footer {
+        padding: 10px;
+        width: 96%;
+    }
+    .footer .footer_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer_caja {
+        margin-bottom: 25px;
+    }
+    
+}
+@media screen and (min-width:425px) and (max-width: 767px) {
+    body{
+        
+        width: 100vh;
+    }
+    .section .article_principal {
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+    .section .article_principal img {
+        width: 40%;
+        height: 50%;
+        display: none;
+    }
+    .section .article_principal .contenido .h1_principal {
+        font-size: 35px;
+    }
+    .section .article_tipos {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-left: 4px;
+    }
+    .section .article_tipos .iso {
+        width: 100%;
+        height: 33%;
+    }
+    .section .article_tipos .ieee {
+        width: 100%;
+        height: 33%;
+    }
+    .section .article_tipos .istqb {
+        width: 100%;
+        height: 33%;
+    }
+    .footer .footer_top {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .footer_caja {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    
+    .section .article_principal{
+        width: 95%;
+    }
+    .section .article_principal .contenido{
+        width: 50%;
+    }
+    .section .article_principal{
+        width: 95%;
+    }
+    .section .article_principal .contenido .h1_principal{
+        font-size: 32px;
+    }
+    .section .article_tipos .img_iso {
+        height: 125.77px;
+        width: 143.55px;
+    }
+    .footer .footer_bottom {
+        margin-top: 35px;
+    }
+}
+@media screen and (min-width:2560px){
+    *{  
+
+        font-size: 1.5rem;
+    }
+    .header{
+        height: 350px;
+    }
+    .section .article_principal .contenido .h1_principal {
+        font-size: 75px;
+    }
+    .section .article_tipos .h3_article {
+        width: 150px;
+        height: 130px;
+    }
+    .section .article_tipos {
+        height: 30rem;
+    }
+    .section .article_tipos .img_article {
+        width: 80%;
+        height: 30%;
+    }
+    
+    .header .header_top .img_logo{
+        width: 250px;
+        height: 160px;
+    }
+    .footer .footer_caja {
+        width: 22rem;
+        height: 5.6rem;
+    }
+    .footer .p_footer {
+        width: 175px;
+        height: 165px;
+    }
+}
+
+
+
