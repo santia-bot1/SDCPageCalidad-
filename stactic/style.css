@@ -26,7 +26,7 @@ body{
     
 }
 .header .header_top .img_logo{
-    width: 90px;
+    width: 120px;
     height: 60px;
     margin: 10px;
     border-radius: 10px;
@@ -69,6 +69,10 @@ body{
     color: #fff;
     text-decoration: inherit;
 }
+.header .header_bottom .nav_page  ul a:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
 main{
     padding-bottom: 25px;
     width: 98%;
@@ -87,6 +91,11 @@ main{
 .section .article_principal img{
     width: 40%;
     height: 50%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 .section .article_principal .contenido{
     display: flex;
@@ -99,7 +108,7 @@ main{
 .section .article_principal .contenido .h1_principal{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
-    text-shadow: -3px -1px 0 #46800f;
+    text-shadow: -3px -1px 0 #17cac3;
     align-self: center;
 }
 .section  .article_tipos{
@@ -108,6 +117,19 @@ main{
     width: 100%;
     height: 22rem;
     background-color: #17cac3;
+}
+.section  .article_tipos .iso:hover{
+    background-color: rgba(1, 82, 161, 1);
+    
+    
+}
+.section  .article_tipos .ieee:hover{
+    background-color: rgba(1, 82, 161, 1);
+
+}
+.section  .article_tipos .istqb:hover{
+    background-color: rgba(1, 82, 161, 1);
+    
 }
 .section  .article_tipos .iso{
     width: 33%;
@@ -148,20 +170,26 @@ main{
 .section .article_tipos .p_article{
     margin: 10px 0px 0px 5px;
     height: 60%;
-    color: #fff;
+    color: #000;
     
 }
+.section .article_tipos .p_article:hover{
+    color: #fff;
+}
+
 .section .article_tipos .img_article{
     align-self: center;
     object-fit: contain;
     width: 80%;
     height: 40%;
     margin-bottom: 15px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
-.section .article_tipos .img_iso{
-    height: 132.77px;
-    width: 372.55px;
-}
+
 .footer{
     border-top: solid 1px black;
     background-color: #F3ECEB;
@@ -175,6 +203,10 @@ main{
     width: 15rem;
     height: 4.6rem;
 }
+.footer .footer_caja:hover{
+    background-color: rgba(1, 82, 161, 1);
+}
+
 .footer .p_footer{
     display: flex;
     border: solid 1px black;
@@ -216,6 +248,10 @@ main{
     list-style: none;
     color: #fff;
     text-decoration: inherit;
+}
+.footer .footer_caja  a:hover{
+    text-decoration:underline;
+    cursor: pointer;
 }
 .footer .terminos{
     display: flex;
@@ -260,6 +296,11 @@ main{
     .section .article_principal .contenido .h1_principal {
             font-size: 35px;
     }
+    .section .article_tipos .h3_article {
+        width: 110px;
+        width: 110px;
+        height: 115px;
+    }
     .section .article_tipos {
         flex-direction: column;
         align-items: center;
@@ -282,6 +323,22 @@ main{
     .footer {
         padding: 10px;
         width: 96%;
+    }
+    .footer .p_footer{
+        display: flex;
+        border: solid 1px black;
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .footer .footer_top {
         display: flex;
